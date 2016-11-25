@@ -12,6 +12,12 @@
 ### 使用方法
 地图显示后，拖动地图，当中心点离开国内时，提示切换到苹果地图显示。
 
+### 核心类/接口
+| 类    | 接口  | 说明   | 版本  |
+| -----|:-----:|:-----:|:-----:|
+| ViewController | - (void)mapView:(UIView *)mapView regionDidChangeAnimated:(BOOL)animated; | 响应地图区域变化，判断中心点 | n/a |
+| ViewController | - (void)performSwitching; | 执行切换 | n/a |
+
 ### 核心实现
 
 - 在地图delegate内判断中心点是否在国内
