@@ -9,3 +9,12 @@ target 'iOS-switch-map' do
     pod 'AMap3DMap'
 
 end
+
+target 'iOS-switch-map-swift' do
+# Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+# use_frameworks!
+
+# Pods for iOS-switch-map
+pod 'AMap3DMap'
+
+end

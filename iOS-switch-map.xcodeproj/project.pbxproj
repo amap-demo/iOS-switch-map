@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F26FFFEF961895E0BFFDC80 /* libPods-iOS-switch-map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C93C09C65B48EFBCF950A /* libPods-iOS-switch-map.a */; };
+		55206E454A1506D52E5144CE /* libPods-iOS-switch-map-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C0DA1A9A82BBCC6AB64E6B /* libPods-iOS-switch-map-swift.a */; };
 		B62F686C1DE53F730060FED8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F686B1DE53F730060FED8 /* main.m */; };
 		B62F686F1DE53F730060FED8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F686E1DE53F730060FED8 /* AppDelegate.m */; };
 		B62F68721DE53F730060FED8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F68711DE53F730060FED8 /* ViewController.m */; };
@@ -15,10 +16,19 @@
 		B62F68771DE53F730060FED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62F68761DE53F730060FED8 /* Assets.xcassets */; };
 		B62F687A1DE53F730060FED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62F68781DE53F730060FED8 /* LaunchScreen.storyboard */; };
 		B62F68821DE541820060FED8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62F68811DE541810060FED8 /* MapKit.framework */; };
+		B66EF0BB1E03862600236C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66EF0BA1E03862600236C3C /* AppDelegate.swift */; };
+		B66EF0BD1E03862600236C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66EF0BC1E03862600236C3C /* ViewController.swift */; };
+		B66EF0C01E03862600236C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0BE1E03862600236C3C /* Main.storyboard */; };
+		B66EF0C21E03862600236C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0C11E03862600236C3C /* Assets.xcassets */; };
+		B66EF0C51E03862600236C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0C31E03862600236C3C /* LaunchScreen.storyboard */; };
+		B66EF0CC1E03872B00236C3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0CB1E03872B00236C3C /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		177A0B2F1C0D6D4D5C03D79C /* Pods-iOS-switch-map-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-switch-map-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		2614F920741619B2E5326C2C /* Pods-iOS-switch-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-switch-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map.release.xcconfig"; sourceTree = "<group>"; };
+		30C0DA1A9A82BBCC6AB64E6B /* libPods-iOS-switch-map-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-switch-map-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F76DA15776A140AEC18667A /* Pods-iOS-switch-map-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-switch-map-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift.release.xcconfig"; sourceTree = "<group>"; };
 		493C93C09C65B48EFBCF950A /* libPods-iOS-switch-map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-switch-map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0A201C3B5267618DAFC650 /* Pods-iOS-switch-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-switch-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map.debug.xcconfig"; sourceTree = "<group>"; };
 		B62F68671DE53F730060FED8 /* iOS-switch-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-switch-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +42,15 @@
 		B62F68791DE53F730060FED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B62F687B1DE53F730060FED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62F68811DE541810060FED8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B66EF0B81E03862600236C3C /* iOS-switch-map-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-switch-map-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66EF0BA1E03862600236C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B66EF0BC1E03862600236C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B66EF0BF1E03862600236C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B66EF0C11E03862600236C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B66EF0C41E03862600236C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B66EF0C61E03862600236C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66EF0CA1E0386DA00236C3C /* objcBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcBridge.h; sourceTree = "<group>"; };
+		B66EF0CB1E03872B00236C3C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B66EF0B51E03862600236C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55206E454A1506D52E5144CE /* libPods-iOS-switch-map-swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +79,7 @@
 			children = (
 				B62F68811DE541810060FED8 /* MapKit.framework */,
 				493C93C09C65B48EFBCF950A /* libPods-iOS-switch-map.a */,
+				30C0DA1A9A82BBCC6AB64E6B /* libPods-iOS-switch-map-swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,7 +87,9 @@
 		B62F685E1DE53F730060FED8 = {
 			isa = PBXGroup;
 			children = (
+				B66EF0CB1E03872B00236C3C /* Podfile */,
 				B62F68691DE53F730060FED8 /* iOS-switch-map */,
+				B66EF0B91E03862600236C3C /* iOS-switch-map-swift */,
 				B62F68681DE53F730060FED8 /* Products */,
 				C6752B87C945F07D15AD085A /* Pods */,
 				71442AB139D2BBD9D30E6564 /* Frameworks */,
@@ -70,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B62F68671DE53F730060FED8 /* iOS-switch-map.app */,
+				B66EF0B81E03862600236C3C /* iOS-switch-map-swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,11 +129,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B66EF0B91E03862600236C3C /* iOS-switch-map-swift */ = {
+			isa = PBXGroup;
+			children = (
+				B66EF0BA1E03862600236C3C /* AppDelegate.swift */,
+				B66EF0BC1E03862600236C3C /* ViewController.swift */,
+				B66EF0BE1E03862600236C3C /* Main.storyboard */,
+				B66EF0C11E03862600236C3C /* Assets.xcassets */,
+				B66EF0C31E03862600236C3C /* LaunchScreen.storyboard */,
+				B66EF0C61E03862600236C3C /* Info.plist */,
+				B66EF0CA1E0386DA00236C3C /* objcBridge.h */,
+			);
+			path = "iOS-switch-map-swift";
+			sourceTree = "<group>";
+		};
 		C6752B87C945F07D15AD085A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				5A0A201C3B5267618DAFC650 /* Pods-iOS-switch-map.debug.xcconfig */,
 				2614F920741619B2E5326C2C /* Pods-iOS-switch-map.release.xcconfig */,
+				177A0B2F1C0D6D4D5C03D79C /* Pods-iOS-switch-map-swift.debug.xcconfig */,
+				3F76DA15776A140AEC18667A /* Pods-iOS-switch-map-swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,12 +177,33 @@
 			productReference = B62F68671DE53F730060FED8 /* iOS-switch-map.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B66EF0B71E03862600236C3C /* iOS-switch-map-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66EF0C91E03862600236C3C /* Build configuration list for PBXNativeTarget "iOS-switch-map-swift" */;
+			buildPhases = (
+				02FE0076AAB2DE66CF3AF332 /* [CP] Check Pods Manifest.lock */,
+				B66EF0B41E03862600236C3C /* Sources */,
+				B66EF0B51E03862600236C3C /* Frameworks */,
+				B66EF0B61E03862600236C3C /* Resources */,
+				31A0B686E468A33A308F62DB /* [CP] Embed Pods Frameworks */,
+				49EACEB2C69F361930A29BE8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-switch-map-swift";
+			productName = "iOS-switch-map-swift";
+			productReference = B66EF0B81E03862600236C3C /* iOS-switch-map-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B62F685F1DE53F730060FED8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = autonavi;
 				TargetAttributes = {
@@ -148,6 +216,11 @@
 								enabled = 1;
 							};
 						};
+					};
+					B66EF0B71E03862600236C3C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -165,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				B62F68661DE53F730060FED8 /* iOS-switch-map */,
+				B66EF0B71E03862600236C3C /* iOS-switch-map-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -176,13 +250,39 @@
 			files = (
 				B62F687A1DE53F730060FED8 /* LaunchScreen.storyboard in Resources */,
 				B62F68771DE53F730060FED8 /* Assets.xcassets in Resources */,
+				B66EF0CC1E03872B00236C3C /* Podfile in Resources */,
 				B62F68751DE53F730060FED8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66EF0B61E03862600236C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66EF0C51E03862600236C3C /* LaunchScreen.storyboard in Resources */,
+				B66EF0C21E03862600236C3C /* Assets.xcassets in Resources */,
+				B66EF0C01E03862600236C3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02FE0076AAB2DE66CF3AF332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		21F15C67B6F124FB1079FCAA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +296,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31A0B686E468A33A308F62DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49EACEB2C69F361930A29BE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6E6C3EE7DB1ED6288D6088F /* [CP] Check Pods Manifest.lock */ = {
@@ -241,6 +371,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B66EF0B41E03862600236C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66EF0BD1E03862600236C3C /* ViewController.swift in Sources */,
+				B66EF0BB1E03862600236C3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -256,6 +395,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				B62F68791DE53F730060FED8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B66EF0BE1E03862600236C3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66EF0BF1E03862600236C3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B66EF0C31E03862600236C3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66EF0C41E03862600236C3C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -303,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,6 +542,46 @@
 			};
 			name = Release;
 		};
+		B66EF0C71E03862600236C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177A0B2F1C0D6D4D5C03D79C /* Pods-iOS-switch-map-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS-switch-map-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-switch-map-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48216a7c-4edd-4f5d-9389-95ffbd3ea775";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/iOS-switch-map-swift/objcBridge.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B66EF0C81E03862600236C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F76DA15776A140AEC18667A /* Pods-iOS-switch-map-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS-switch-map-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-switch-map-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37bcbefd-c99d-44d5-a048-5ff502582130";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/iOS-switch-map-swift/objcBridge.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +599,15 @@
 			buildConfigurations = (
 				B62F687F1DE53F730060FED8 /* Debug */,
 				B62F68801DE53F730060FED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B66EF0C91E03862600236C3C /* Build configuration list for PBXNativeTarget "iOS-switch-map-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66EF0C71E03862600236C3C /* Debug */,
+				B66EF0C81E03862600236C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
