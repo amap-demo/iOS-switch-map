@@ -19,7 +19,7 @@
 | ViewController | - (void)performSwitching; | 执行切换 | n/a |
 
 ### 核心实现
-
+#### objective-c
 - 在地图delegate内判断中心点是否在国内
 ```
 - (void)mapView:(UIView *)mapView regionDidChangeAnimated:(BOOL)animated {
@@ -72,4 +72,53 @@
         [self.appleMapview.camera setHeading:self.gaodeMapview.rotationDegree];
     }
 }
+```
+#### swift
+- 判断中心点是否在国内
+```
+func handleMapviewRegionChange(mapView : UIView) {
+        if(mapView.isHidden) {
+            return
+        }
+        
+        if(self.isSwitching) {
+            self.isSwitching = false
+            return
+        }
+        
+        if(mapView.isKind(of: MAMapView.self)) {
+            if(!AMapDataAvailableForCoordinate(self.gaodeMapView.centerCoordinate)) {
+                let alert = UIAlertView.init(title: "", message: "是否切换到苹果地图显示", delegate: self, cancelButtonTitle: "取消", otherButtonTitles:"确定")
+                alert.show()
+            }
+        } else {
+            if(AMapDataAvailableForCoordinate(self.appleMapView.centerCoordinate)) {
+                let alert = UIAlertView.init(title: "", message: "是否切换到高德地图显示", delegate: self, cancelButtonTitle: "取消", otherButtonTitles:"确定")
+                alert.show()
+            }
+        }
+    }
+```
+- 执行切换
+```
+    func performSwitching() {
+        self.isSwitching = true
+        
+        self.gaodeMapView.isHidden = !self.gaodeMapView.isHidden
+        self.appleMapView.isHidden = !self.appleMapView.isHidden
+        
+        if(!self.gaodeMapView.isHidden) {
+            let region = self.MARegionForMKRegion(mkRegion: self.appleMapView.region)
+            self.gaodeMapView.region = region
+            
+            self.gaodeMapView.centerCoordinate = self.appleMapView.centerCoordinate
+            self.gaodeMapView.rotationDegree = CGFloat(self.appleMapView.camera.heading)
+        } else {
+            let region = self.MKRegionForMARegion(maRegion: self.gaodeMapView.region)
+            
+            self.appleMapView.region = region
+            self.appleMapView.centerCoordinate = self.gaodeMapView.centerCoordinate
+            self.appleMapView.camera.heading = CLLocationDirection(self.gaodeMapView.rotationDegree)
+        }
+    }
 ```
