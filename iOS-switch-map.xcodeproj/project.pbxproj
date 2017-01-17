@@ -22,7 +22,19 @@
 		B66EF0C21E03862600236C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0C11E03862600236C3C /* Assets.xcassets */; };
 		B66EF0C51E03862600236C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0C31E03862600236C3C /* LaunchScreen.storyboard */; };
 		B66EF0CC1E03872B00236C3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0CB1E03872B00236C3C /* Podfile */; };
+		D99D749C1E2E116A000D48AE /* MAMapUITestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D99D749B1E2E116A000D48AE /* MAMapUITestHelper.m */; };
+		D9F65C101E2E0D41002BBD5C /* iOS_switch_mapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F65C0F1E2E0D41002BBD5C /* iOS_switch_mapUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9F65C121E2E0D41002BBD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B62F685F1DE53F730060FED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62F68661DE53F730060FED8;
+			remoteInfo = "iOS-switch-map";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		177A0B2F1C0D6D4D5C03D79C /* Pods-iOS-switch-map-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-switch-map-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +63,11 @@
 		B66EF0C61E03862600236C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66EF0CA1E0386DA00236C3C /* objcBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcBridge.h; sourceTree = "<group>"; };
 		B66EF0CB1E03872B00236C3C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D99D749A1E2E116A000D48AE /* MAMapUITestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMapUITestHelper.h; sourceTree = "<group>"; };
+		D99D749B1E2E116A000D48AE /* MAMapUITestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMapUITestHelper.m; sourceTree = "<group>"; };
+		D9F65C0D1E2E0D41002BBD5C /* iOS-switch-mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-switch-mapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F65C0F1E2E0D41002BBD5C /* iOS_switch_mapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_switch_mapUITests.m; sourceTree = "<group>"; };
+		D9F65C111E2E0D41002BBD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +85,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55206E454A1506D52E5144CE /* libPods-iOS-switch-map-swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F65C0A1E2E0D41002BBD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +114,7 @@
 				B66EF0CB1E03872B00236C3C /* Podfile */,
 				B62F68691DE53F730060FED8 /* iOS-switch-map */,
 				B66EF0B91E03862600236C3C /* iOS-switch-map-swift */,
+				D9F65C0E1E2E0D41002BBD5C /* iOS-switch-mapUITests */,
 				B62F68681DE53F730060FED8 /* Products */,
 				C6752B87C945F07D15AD085A /* Pods */,
 				71442AB139D2BBD9D30E6564 /* Frameworks */,
@@ -101,6 +126,7 @@
 			children = (
 				B62F68671DE53F730060FED8 /* iOS-switch-map.app */,
 				B66EF0B81E03862600236C3C /* iOS-switch-map-swift.app */,
+				D9F65C0D1E2E0D41002BBD5C /* iOS-switch-mapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +180,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D9F65C0E1E2E0D41002BBD5C /* iOS-switch-mapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F65C0F1E2E0D41002BBD5C /* iOS_switch_mapUITests.m */,
+				D99D749A1E2E116A000D48AE /* MAMapUITestHelper.h */,
+				D99D749B1E2E116A000D48AE /* MAMapUITestHelper.m */,
+				D9F65C111E2E0D41002BBD5C /* Info.plist */,
+			);
+			path = "iOS-switch-mapUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +234,24 @@
 			productReference = B66EF0B81E03862600236C3C /* iOS-switch-map-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D9F65C0C1E2E0D41002BBD5C /* iOS-switch-mapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F65C161E2E0D41002BBD5C /* Build configuration list for PBXNativeTarget "iOS-switch-mapUITests" */;
+			buildPhases = (
+				D9F65C091E2E0D41002BBD5C /* Sources */,
+				D9F65C0A1E2E0D41002BBD5C /* Frameworks */,
+				D9F65C0B1E2E0D41002BBD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F65C131E2E0D41002BBD5C /* PBXTargetDependency */,
+			);
+			name = "iOS-switch-mapUITests";
+			productName = "iOS-switch-mapUITests";
+			productReference = D9F65C0D1E2E0D41002BBD5C /* iOS-switch-mapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +277,12 @@
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
+					D9F65C0C1E2E0D41002BBD5C = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = B62F68661DE53F730060FED8;
+					};
 				};
 			};
 			buildConfigurationList = B62F68621DE53F730060FED8 /* Build configuration list for PBXProject "iOS-switch-map" */;
@@ -239,6 +300,7 @@
 			targets = (
 				B62F68661DE53F730060FED8 /* iOS-switch-map */,
 				B66EF0B71E03862600236C3C /* iOS-switch-map-swift */,
+				D9F65C0C1E2E0D41002BBD5C /* iOS-switch-mapUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +324,13 @@
 				B66EF0C51E03862600236C3C /* LaunchScreen.storyboard in Resources */,
 				B66EF0C21E03862600236C3C /* Assets.xcassets in Resources */,
 				B66EF0C01E03862600236C3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F65C0B1E2E0D41002BBD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +449,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9F65C091E2E0D41002BBD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99D749C1E2E116A000D48AE /* MAMapUITestHelper.m in Sources */,
+				D9F65C101E2E0D41002BBD5C /* iOS_switch_mapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9F65C131E2E0D41002BBD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62F68661DE53F730060FED8 /* iOS-switch-map */;
+			targetProxy = D9F65C121E2E0D41002BBD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B62F68731DE53F730060FED8 /* Main.storyboard */ = {
@@ -582,6 +668,38 @@
 			};
 			name = Release;
 		};
+		D9F65C141E2E0D41002BBD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS-switch-mapUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-switch-mapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "iOS-switch-map";
+			};
+			name = Debug;
+		};
+		D9F65C151E2E0D41002BBD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS-switch-mapUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-switch-mapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "iOS-switch-map";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,6 +726,15 @@
 			buildConfigurations = (
 				B66EF0C71E03862600236C3C /* Debug */,
 				B66EF0C81E03862600236C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F65C161E2E0D41002BBD5C /* Build configuration list for PBXNativeTarget "iOS-switch-mapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F65C141E2E0D41002BBD5C /* Debug */,
+				D9F65C151E2E0D41002BBD5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

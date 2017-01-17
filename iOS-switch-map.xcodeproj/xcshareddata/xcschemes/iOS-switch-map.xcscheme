@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9F65C0C1E2E0D41002BBD5C"
+               BuildableName = "iOS-switch-mapUITests.xctest"
+               BlueprintName = "iOS-switch-mapUITests"
+               ReferencedContainer = "container:iOS-switch-map.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

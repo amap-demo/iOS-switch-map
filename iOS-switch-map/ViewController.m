@@ -30,12 +30,17 @@
     self.gaodeMapview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.gaodeMapview.delegate = self;
     [self.view addSubview:self.gaodeMapview];
+    [self performSelector:@selector(delayToSetZoomLevel) withObject:nil afterDelay:0.0];
     
     self.appleMapview = [[MKMapView alloc] initWithFrame:self.view.bounds];
     self.appleMapview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.appleMapview.delegate = self;
     [self.view addSubview:self.appleMapview];
     [self.appleMapview setHidden:YES];
+}
+
+- (void)delayToSetZoomLevel{
+    [self.gaodeMapview setZoomLevel:4 animated:NO];
 }
 
 
@@ -58,12 +63,12 @@
     
     if([mapView isKindOfClass:[MAMapView class]]) {
         if(!AMapDataAvailableForCoordinate(self.gaodeMapview.centerCoordinate)) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"是否切换到苹果地图显示" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"是否切换到苹果地图显示" message:@"" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
             [alert show];
         }
     } else {
         if(AMapDataAvailableForCoordinate(self.appleMapview.centerCoordinate)) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"是否切换到高德地图显示" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"是否切换到高德地图显示" message:@"" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
             [alert show];
         }
     }
