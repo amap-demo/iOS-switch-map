@@ -30,7 +30,7 @@
     self.gaodeMapview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.gaodeMapview.delegate = self;
     [self.view addSubview:self.gaodeMapview];
-    [self performSelector:@selector(delayToSetZoomLevel) withObject:nil afterDelay:0.0];
+    [self.gaodeMapview setZoomLevel:4.5 animated:NO];
     
     self.appleMapview = [[MKMapView alloc] initWithFrame:self.view.bounds];
     self.appleMapview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -38,11 +38,6 @@
     [self.view addSubview:self.appleMapview];
     [self.appleMapview setHidden:YES];
 }
-
-- (void)delayToSetZoomLevel{
-    [self.gaodeMapview setZoomLevel:4 animated:NO];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
