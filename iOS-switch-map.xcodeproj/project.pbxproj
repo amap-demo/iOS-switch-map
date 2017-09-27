@@ -21,7 +21,6 @@
 		B66EF0C01E03862600236C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0BE1E03862600236C3C /* Main.storyboard */; };
 		B66EF0C21E03862600236C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0C11E03862600236C3C /* Assets.xcassets */; };
 		B66EF0C51E03862600236C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0C31E03862600236C3C /* LaunchScreen.storyboard */; };
-		B66EF0CC1E03872B00236C3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B66EF0CB1E03872B00236C3C /* Podfile */; };
 		D99D749C1E2E116A000D48AE /* MAMapUITestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D99D749B1E2E116A000D48AE /* MAMapUITestHelper.m */; };
 		D9F65C101E2E0D41002BBD5C /* iOS_switch_mapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F65C0F1E2E0D41002BBD5C /* iOS_switch_mapUITests.m */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		B66EF0C41E03862600236C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66EF0C61E03862600236C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66EF0CA1E0386DA00236C3C /* objcBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcBridge.h; sourceTree = "<group>"; };
-		B66EF0CB1E03872B00236C3C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D99D749A1E2E116A000D48AE /* MAMapUITestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMapUITestHelper.h; sourceTree = "<group>"; };
 		D99D749B1E2E116A000D48AE /* MAMapUITestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMapUITestHelper.m; sourceTree = "<group>"; };
 		D9F65C0D1E2E0D41002BBD5C /* iOS-switch-mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-switch-mapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 		B62F685E1DE53F730060FED8 = {
 			isa = PBXGroup;
 			children = (
-				B66EF0CB1E03872B00236C3C /* Podfile */,
 				B62F68691DE53F730060FED8 /* iOS-switch-map */,
 				B66EF0B91E03862600236C3C /* iOS-switch-map-swift */,
 				D9F65C0E1E2E0D41002BBD5C /* iOS-switch-mapUITests */,
@@ -259,7 +256,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = autonavi;
 				TargetAttributes = {
 					B62F68661DE53F730060FED8 = {
@@ -312,7 +309,6 @@
 			files = (
 				B62F687A1DE53F730060FED8 /* LaunchScreen.storyboard in Resources */,
 				B62F68771DE53F730060FED8 /* Assets.xcassets in Resources */,
-				B66EF0CC1E03872B00236C3C /* Podfile in Resources */,
 				B62F68751DE53F730060FED8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,13 +339,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-switch-map-swift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		21F15C67B6F124FB1079FCAA /* [CP] Embed Pods Frameworks */ = {
@@ -388,9 +387,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -403,13 +405,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-switch-map-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E9055DB29727EDED61C429B4 /* [CP] Copy Pods Resources */ = {
@@ -418,9 +423,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
