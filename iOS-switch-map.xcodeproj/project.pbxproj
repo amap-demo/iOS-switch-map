@@ -199,7 +199,6 @@
 				B62F68631DE53F730060FED8 /* Sources */,
 				B62F68641DE53F730060FED8 /* Frameworks */,
 				B62F68651DE53F730060FED8 /* Resources */,
-				21F15C67B6F124FB1079FCAA /* [CP] Embed Pods Frameworks */,
 				E9055DB29727EDED61C429B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -219,7 +218,6 @@
 				B66EF0B41E03862600236C3C /* Sources */,
 				B66EF0B51E03862600236C3C /* Frameworks */,
 				B66EF0B61E03862600236C3C /* Resources */,
-				31A0B686E468A33A308F62DB /* [CP] Embed Pods Frameworks */,
 				49EACEB2C69F361930A29BE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -287,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -351,52 +350,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21F15C67B6F124FB1079FCAA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31A0B686E468A33A308F62DB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		49EACEB2C69F361930A29BE8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-switch-map-swift/Pods-iOS-switch-map-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6E6C3EE7DB1ED6288D6088F /* [CP] Check Pods Manifest.lock */ = {
@@ -423,16 +392,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-switch-map/Pods-iOS-switch-map-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -652,7 +621,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/iOS-switch-map-swift/objcBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -672,7 +641,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/iOS-switch-map-swift/objcBridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
